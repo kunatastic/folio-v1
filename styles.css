@@ -6,21 +6,40 @@
 }
 
 :root {
-  --background-color-1: #ffffff;
-  --background-color-1-opac: #ffffffb9;
-  --text-color: #000000;
-  --un-text-color: #3a3a3a;
+  --background-color-1: #1a1a1a;
+  --background-color-1-opac: #1a1a1a3f;
+
+  --background-color-2: lightcoral;
+  --background-color-2-alt: #c26666a9;
+  --background-color-2-opac: rgba(240, 128, 128, 0.486);
+
+  --text-color: #ffffff;
+  --un-text-color: #dfd0d0;
   --text-color-opac: #0000009a;
-  --secondary-color: #ca2b4b;
-  --secondary-color-opac: #ca2b4bd5;
-  --extra-color: #ffa384;
+
+  --secondary-color: #ffd700;
+  --secondary-color-opac: #ffd700d5;
+  --extra-color: #ffd90069;
+}
+
+::selection {
+  background-color: var(--un-text-color);
+  color: #1a1a1a;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* overflow: hidden; */
 }
 
 body {
   background-color: var(--background-color-1);
-  font-family: "Times New Roman", Times, serif;
+  /* font-family: "Times New Roman", Times, serif; */
+  font-family: "Montserrat", monospace;
   color: var(--text-color);
   line-height: 2;
+  overflow-x: hidden;
+  user-select: none;
 }
 
 ul {
@@ -46,7 +65,7 @@ a {
 
 .grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
@@ -56,6 +75,7 @@ a {
   font-family: "Sacramento", monospace;
   font-weight: 200;
   transform: rotateZ(-2deg);
+  cursor: pointer;
 }
 .nav_bar_links a {
   font-size: 50px;
@@ -108,21 +128,23 @@ a {
   left: 0;
   background-color: var(--background-color-1-opac);
   transition: 0.4s;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   z-index: 1;
 }
 
 /* HERO SECTION */
-
+.hero {
+  height: 90vh;
+}
 .hero_container {
-  height: 80vh;
+  height: 100%;
 }
 
 .text_container {
   /* background-color: crimson; */
   position: absolute;
-  height: 90vh;
+  height: 100%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -133,29 +155,122 @@ a {
 .hero_text1 {
   font-family: "Poppins", Times, serif;
   font-size: 1500%;
+  line-height: 0.5;
+  margin-top: 10%;
   /* z-index: 2; */
   /* transition: 10s all; */
   /* transform: skewX(-180); */
 }
+
 .hero_text2 {
   font-family: "Times New Roman", Times, serif;
-  font-size: 250%;
+  margin-top: 80px;
+  font-size: 200%;
+}
+.hero_text3 {
+  font-family: "Montserrat", Times, serif;
+  line-height: 0.25;
+  font-size: 175%;
+}
+
+.hero_text2 .logo {
+  font-size: 120%;
 }
 .image_container {
   position: absolute;
   /* transition: 10s all; */
-  top: 19%;
+  top: 17%;
   right: 25%;
   z-index: -1;
-  transform: rotateZ(69deg);
+}
+
+.random_div {
+  /* background-color: var(--extra-color); */
+  position: absolute;
+  /* right: 1%; */
+  width: 400px;
+  height: 600px;
+  background-color: var(--background-color-1-opac);
+  font-size: 3000%;
+  text-align: center;
+  color: rgba(255, 217, 0, 0.062);
+  /* overflow-x: scroll; */
+  overflow: hidden;
 }
 
 .jump_light {
   color: gold;
 }
 .jump_light1 {
-  color: gold;
-  background-color: var(--text-color-opac);
+  color: lightcoral;
+  /* background-color: var(--text-color-opac); */
+}
+.jump_light2 {
+  color: lightgreen;
+  /* background-color: var(--text-color-opac); */
+}
+.jump_light3 {
+  color: lightseagreen;
+  /* background-color: var(--text-color-opac); */
+}
+
+/* HOME SECTION */
+
+.home {
+  background: linear-gradient(
+    to bottom right,
+    var(--background-color-2),
+    var(--background-color-2-opac)
+  );
+  height: 100vh;
+}
+
+.intro_title,
+.skill_title {
+  font-size: 75px;
+}
+
+.keyboard_strokes {
+  font-family: monospace;
+  background-color: var(--background-color-1);
+  border-radius: 5px;
+}
+.js {
+  color: #f7df1e;
+}
+.py {
+  color: #306998;
+}
+.html {
+  color: #f16529;
+}
+.css {
+  color: #264de4;
+}
+.cpp {
+  color: #5a6bba;
+}
+.php {
+  color: #757ab2;
+}
+.intro_content,
+.skill_content {
+  font-size: 20px;
+}
+/* SKILL SET SECTION */
+
+.skillset {
+  /* background: linear-gradient(
+    to top right,
+    var(--background-color-1-opac),
+    var(--background-color-1)
+  ); */
+  height: 100vh;
+  padding-top: 5vh;
+}
+
+.skill_bar {
+  width: 100%;
 }
 
 .footer_section {
