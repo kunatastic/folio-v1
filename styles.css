@@ -253,6 +253,29 @@ a {
 .php {
   color: #757ab2;
 }
+/* 
+.intro_content p {
+  padding: 2em;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.3)
+  );
+  filter: blur(0.2px);
+  border-radius: 10px;
+  transition: 0.1s all;
+}
+.intro_content p:hover {
+  box-shadow: none;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.2)
+  );
+  filter: blur(0px);
+  transition: 0.1s all;
+  transform: scale(1.01);
+} */
 .intro_content,
 .skill_content {
   font-size: 20px;
@@ -273,10 +296,19 @@ a {
   width: 100%;
 }
 
+/* FOOTER SECTION */
 .footer_section {
-  background-color: aqua;
+  background-color: #264de4;
+  height: 50vh;
 }
 
+.connect {
+  flex-direction: column;
+}
+.connect_links {
+  justify-content: space-evenly;
+  align-items: center;
+}
 @media screen and (max-width: 1100px) {
   .nav_section > .flex {
     flex-direction: column;
