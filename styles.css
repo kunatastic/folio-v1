@@ -60,7 +60,7 @@ a {
 
 .flex {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -122,13 +122,18 @@ a {
   transition: 0.3s ease-out;
 }
 
+.nav {
+  justify-content: space-evenly;
+}
+
 .nav_section {
   height: 10vh;
   position: sticky;
-  top: 0px;
   position: -webkit-sticky;
+  top: 0px;
   left: 0;
-  background-color: var(--background-color-1-opac);
+  /* background-color: var(--background-color-1-opac); */
+  background-color: orchid;
   transition: 0.4s;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -312,6 +317,13 @@ a {
   .container {
     max-width: 90%;
   }
+  .flex {
+    justify-content: center;
+  }
+  .nav {
+    justify-content: center;
+  }
+
   .grid {
     /* all: unset; */
     display: grid;
