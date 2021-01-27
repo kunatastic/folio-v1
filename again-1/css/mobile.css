@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px) {
+  .container {
+    min-width: 80%;
+  }
+  .navigation nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* HERO */
+  .hero__text-1 {
+    font-size: 120px;
+  }
+  /* .navigation nav {
+    width: 100%;
+  }
+  .navigation nav {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .navigation nav li {
+    border-right: 2px solid var(--secondary-color);
+  } */
+}

@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Sacramento&display=swap");
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ============ COLORS ============== */
+  --bg-color: #1a1a1a;
+  --bg-color-opac: #1a1a1a49;
+
+  --background-color-2: #f08080;
+  --background-color-2-alt: #c26666a9;
+  --background-color-2-opac: #f080807c;
+
+  --background-color-3: #90ee90;
+  --background-color-3-alt: #90ee903d;
+  --background-color-3-opac: #45e945a9;
+
+  --text-color: #ffffff;
+  --un-text-color: #dfd0d0;
+  --text-color-opac: #0000009a;
+
+  --secondary-color: #ffd700;
+  --secondary-color-opac: #ffd700d5;
+  --extra-color: #ffd90069;
+
+  /* ============= TOPOGRAPH ============*/
+  --logo-font: "Sacramento", cursive;
+  --header-font: "Times New Roman", Times, serif;
+  --body-font: "Montserrat", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--bg-color);
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 40px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
