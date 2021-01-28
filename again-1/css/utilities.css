@@ -7,14 +7,23 @@
   box-sizing: border-box;
 }
 
+/* COLORS OF CHOICE */
+/* 
+  * 3f3f3f
+*/
+
 :root {
   /* ============ COLORS ============== */
-  --bg-color: #1a1a1a;
+  /* --bg-color: #1a1a1a; */
+  --bg-color: #292929;
   --bg-color-opac: #1a1a1a49;
 
-  --background-color-2: #f08080;
-  --background-color-2-alt: #c26666a9;
-  --background-color-2-opac: #f080807c;
+  /* --background-color-2: #f08080; */
+  --background-color-2: #ffd700;
+  /* --background-color-2-alt: #c26666a9; */
+  --background-color-2-alt: #000000a9;
+  /* --background-color-2-opac: #f080807c; */
+  --background-color-2-opac: #fcfcfc7c;
 
   --background-color-3: #90ee90;
   --background-color-3-alt: #90ee903d;
@@ -27,6 +36,10 @@
   --secondary-color: #ffd700;
   --secondary-color-opac: #ffd700d5;
   --extra-color: #ffd90069;
+
+  --fontcolor-1: lightseagreen;
+  --fontcolor-2: lightcoral;
+  --fontcolor-3: lightgreen;
 
   /* ============= TOPOGRAPH ============*/
   --logo-font: "Sacramento", cursive;
@@ -53,7 +66,7 @@ a {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 80%;
   padding: 0 40px;
   width: 100%;
   height: 100%;
@@ -66,8 +79,46 @@ a {
   align-items: center;
 }
 
+.flex-v {
+  flex-direction: column;
+  justify-content: center;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+}
+
+/* .__grid {
+  grid-template-columns: 2fr 5fr;
+} */
+
+.card {
+  background-color: var(--text-color-2);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  /* color: var(--text-color); */
+}
+
+.theme1 {
+  background: linear-gradient(
+    to bottom right,
+    var(--background-color-2),
+    var(--background-color-2-opac)
+  );
+  color: var(--bg-color);
+}
+
+.theme2 {
+  color: var(--background-color-2);
+}
+
+.text-center {
+  text-align: center;
+}
+
+img {
+  width: 100%;
 }

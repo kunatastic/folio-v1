@@ -1,7 +1,6 @@
 window.onscroll = function () {
   scrollFunction();
 };
-console.log(123456);
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("navigation").style.boxShadow =
