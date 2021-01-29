@@ -52,9 +52,13 @@
   }
   .intro_title {
     margin-top: 80px;
+    display: sticky;
+    top: 0px;
+    left: 0px;
   }
   .intro_content {
     text-align: center;
+    padding-bottom: 30px;
   }
 
   /* SKILLS */
@@ -79,9 +83,20 @@
   .skills .__grid div:nth-child(even) {
     grid-row: 1;
   }
+  /* PROJECTS */
+  .projects {
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 500px) {
+  /* LOGO */
+  .navigation .logo a {
+    font-size: 35px;
+  }
+  .navigation .logo {
+    transform: rotateY(-5deg);
+  }
   /* HERO */
   .hero__text-1 {
     font-size: 120px;

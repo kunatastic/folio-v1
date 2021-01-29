@@ -43,7 +43,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
     text-align: center;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 250ms ease;
   }
 
@@ -51,12 +51,12 @@
     position: absolute;
     width: 100%;
     height: 17em;
-    top: 0;
-    right: 0;
-    padding: 20px;
+
     z-index: 2;
-    background: white;
     text-align: center;
+
+    background: #202426;
+    color: #fff;
     transition: background 250ms ease, color 250ms, width 250ms ease,
       padding 250ms ease;
   }
@@ -66,43 +66,22 @@
     width: 0;
     height: 0;
     position: absolute;
-    bottom: 0%;
-    left: -20px;
+    bottom: -20px;
+    left: 25%;
     z-index: 45;
     margin-top: -10px;
     border-style: solid;
     border-width: 10px;
-    /* border-color: transparent #fff transparent transparent; */
-    background-color: purple;
+    border-color: #202426 transparent transparent transparent;
     content: "";
     transition: border-color 250ms;
   }
 
-  .showcase:hover .thumbnail {
-    right: 325px;
-    left: -25px;
-  }
 
-  .showcase:hover .thumbnail__overlay {
-    opacity: 1;
-  }
-
-  .showcase:hover .desc {
-    width: 350px;
-    padding-left: 45px;
-    padding-right: 45px;
-    background: #202426;
-    color: #fff;
-  }
-
-  .showcase:hover .desc:after {
-    border-color: transparent #202426 transparent transparent;
-  }
-
-  .showcase--inverted .thumbnail {
+  /* .showcase--inverted .thumbnail {
     right: 0;
     left: 300px;
-  }
+  } */
 
   .showcase--inverted .desc {
     left: 0;
@@ -110,19 +89,11 @@
   }
 
   .showcase--inverted .desc:after {
-    left: auto;
-    right: -20px;
-    border-color: transparent transparent transparent #fff;
+    left: 75%;
+    border-color: #202426 transparent transparent transparent;
   }
 
-  .showcase--inverted:hover .thumbnail {
-    left: 325px;
-    right: -25px;
-  }
 
-  .showcase--inverted:hover .desc:after {
-    border-color: transparent transparent transparent #202426;
-  }
 
   .btn {
     padding: 1em 2em;
@@ -131,17 +102,32 @@
     text-decoration: none;
     font-weight: 700;
     transition: background 250ms;
-  }
-
-  .btn:hover {
     background: rgba(0, 0, 0, 0.6);
   }
+
+
 
   @media screen and (min-width: 768px) {}
 </style>
 
 <body>
   <div class="showcase">
+
+    <div class="thumbnail thumbnail--awesome">
+      <div class="thumbnail__overlay">
+        <a class="btn" href="https://github.com/kunatastic/Don-t-Cook" target="_blank">CODE</a>
+        <a class="btn" href="https://dont-cook.web.app/" target="_blank">LIVE</a>
+      </div>
+    </div>
+
+    <div class="desc">
+      <p>React Application</p>
+      <h2>Don't Cook</h2>
+      <p>This application helps to retrieve and render super delicious dishes recipes</p>
+    </div>
+
+  </div>
+  <div class="showcase showcase--inverted">
 
     <div class="thumbnail thumbnail--awesome">
       <div class="thumbnail__overlay">

@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="./css/mobile.css">
   <link rel="stylesheet" href="./css/component.css">
   <link rel="stylesheet" href="./css/showcase.css">
+  <link rel="stylesheet" href="./css/toggle_nav.css">
 
   <!-- SCRIPTS -->
   <script defer src="./script/script.js"></script>
@@ -38,20 +39,35 @@
           </a>
         </div>
       </div>
-      <nav>
-        <ul class="flex">
+      <!-- <nav class="side-nav">
+        <ul class="flex sections">
           <li><a href="#">home</a></li>
           <li><a href="#skills">skills</a></li>
           <li><a href="#projects">projects</a></li>
           <li><a href="#about">about</a></li>
         </ul>
-      </nav>
+      </nav> -->
       <div class="hamburger">
         <i class="fa-bars fas"></i>
+      </div>
+      <div class="close">
+        <i class="fa-times fas"></i>
       </div>
     </div>
   </section>
   <!--=============== /NAVIGATION ==================-->
+  <!-- <div style="height: 200px;"></div> -->
+  <!-- EXTRA NAV -->
+  <!-- <div class="side-nav">
+    <ul class="sections">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Gallary</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </div> -->
+
+  <!-- /EXTRA NAV -->
   <!--=============== HERO =========================-->
   <section class="hero">
     <div class="container">
@@ -206,11 +222,13 @@
   </section>
   <!--================== /SKILLS ===================-->
 
-  <h1 class="floating">Somebody told me that this might look cool. Does it look cool?</h1>
+  <!-- <h1 class="floating">Somebody told me that this might look cool. Does it look cool?</h1> -->
 
   <!--================== PROJECTS ==================-->
   <section class="projects" id="projects">
-    <p class="text-center projects_title">My Projects</p>
+    <div class="flex">
+      <p class="text-center projects_title">My Projects</p>
+    </div>
     <div class="container flex flex-v">
       <!-- PROJECTS CARDS -->
       <div class="showcase">
@@ -227,40 +245,94 @@
         </div>
       </div>
       <div class="showcase showcase--inverted">
-        <div class="thumbnail">
+        <div class="thumbnail thumbnail--awesome-1">
           <div class="thumbnail__overlay">
-            <a class="btn" href="#0">DETAILS</a>
+            <a class="btn" href="https://github.com/kunatastic/Mood-Analxyzer/" target="_blank">CODE</a>
+            <a class="btn" href="https://kunatastic.github.io/Mood-Analxyzer/" target="_blank">LIVE</a>
           </div>
         </div>
         <div class="desc">
-          <p>Case Study</p>
-          <h2>Awesome Project 2</h2>
-          <p>This project is even more awesome!
-          </p>
+          <p>AWS and AI/ML project</p>
+          <h2>Mood Analxyzer</h2>
+          <p>This project was based on detecting the facial and textual sentiments on realtime basis and displaying the
+            results. Using FaceApi.JS and AWS comprehend </p>
         </div>
       </div>
-      <div class="showcase ">
-        <div class="desc">
-          <p>Case Study</p>
-          <h2>Inverted Project</h2>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l
-          </p>
-        </div>
-        <div class="thumbnail">
+      <div class="showcase">
+        <div class="thumbnail thumbnail--awesome-2">
           <div class="thumbnail__overlay">
-            <a class="btn" href="#0">DETAILS</a>
+            <a class="btn" href="https://github.com/kunatastic/CABer/" target="_blank">CODE</a>
           </div>
         </div>
+        <div class="desc">
+          <p>Full stack application using MySQL & PHP</p>
+          <h2>CABER</h2>
+          <p>This project was based on helping people for cab pooling. People would be sorted according to their
+            location and desired times and contact details would be shared and planned accordingly </p>
+        </div>
       </div>
+      <div class="showcase showcase--inverted">
+        <div class="thumbnail thumbnail--awesome-3">
+          <div class="thumbnail__overlay">
+            <a class="btn" href="https://github.com/kunatastic/QuotesLoader/" target="_blank">CODE</a>
+            <a class="btn" href="https://kunatastic.github.io/QuotesLoader/" target="_blank">LIVE</a>
+          </div>
+        </div>
+        <div class="desc">
+          <p>JS DOM , HTML and CSS</p>
+          <h2>Quote Loaader</h2>
+          <p>A customized homepage which render a new quote everytime and with duck duck go search bar which enables its
+            shortcut for searching</p>
+        </div>
+      </div>
+
       <!--/ PROJECTS CARDS -->
     </div>
   </section>
 
 
   <!--================= /PROJECTS ==================-->
-  <!-- ABOUT ME -->
-  <!-- /ABOUT ME -->
+  <!--================== ABOUT ME ==================-->
+  <section class="about" id="about">
+    <div class="container grid __grid">
+      <div class="flex">
+        <div class="about_title">
+          About Me
+        </div>
+      </div>
+
+      <div class="flex">
+        <div class="about_content card">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem porro quod, reprehenderit, dolorem esse sit
+          officiis quam eius eaque iure tempora dolor. Iure, magnam porro odit vero sint totam voluptatibus.
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================= /ABOUT ME ==================-->
   <!-- FOOTER -->
+  <footer class="footer theme1">
+    <div class="container grid grid-3">
+      <div>
+        <h1> <a href="#"> <span class="logo-footer">kunatastic</span></a> </h1>
+        <p>Copyright © 2021 All rights reserved 🚀 Crafted by me | Kunal Kumar Jha</p>
+      </div>
+      <nav>
+        <ul class="flex nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+      <div class="social flex">
+        <a href="#"><i class="fab fa-github fa-2x"></i></a>
+        <a href="#"><i class="fab fa-medium fa-2x"></i></a>
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+      </div>
+    </div>
+  </footer>
   <!-- /FOOTER -->
 
 </body>

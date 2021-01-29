@@ -1,4 +1,4 @@
-/* NAVIGATION */
+/* NAVIGATION SECTION */
 .navigation {
   height: 70px;
   width: 100%;
@@ -40,7 +40,6 @@
   margin: 0 3px;
   background-color: var(--background-color-2);
   text-align: center;
-
   transition: 0.2s all;
 }
 .navigation li:hover {
@@ -71,7 +70,7 @@
   font-size: 20px;
 }
 
-/* HERO */
+/* HERO SECTION */
 
 .hero {
   height: 90vh;
@@ -84,7 +83,7 @@
 .hero__text-3 {
   font-size: 200px;
   font-family: var(--header-font);
-  text-shadow: 10px 0 20px rgba(0, 0, 0, 1);
+  text-shadow: 10px 0 20px rgba(0, 0, 0, 0.51);
   color: var(--text-color);
 }
 
@@ -165,25 +164,14 @@
 .intro_title:after {
   content: "";
   height: 2.3px;
-  background: black;
+  background: var(--text-color);
   display: block;
 }
 .intro_title:before {
   content: "";
   height: 2.5px;
-  background: black;
+  background: var(--text-color);
   display: block;
-}
-.intro .card {
-  transition: all 0.4s ease;
-}
-.intro .card:hover {
-  background: linear-gradient(
-    to top right,
-    transparent,
-    rgba(255, 255, 255, 0.05)
-  );
-  transform: translateY(-5px);
 }
 
 /* SKILLS SECTION */
@@ -192,6 +180,7 @@
   height: 100vh;
   position: relative;
   padding-top: 30px;
+  background-color: var(--bg-color-3);
 }
 
 .skills_title {
@@ -201,14 +190,14 @@
 
 .skills_title:before {
   content: "";
-  background-color: var(--background-color-2);
   display: block;
+  background: var(--text-color);
   height: 2.5px;
 }
 
 .skills_title:after {
   content: "";
-  background-color: var(--background-color-2);
+  background: var(--text-color);
   display: block;
   height: 2.4px;
 }
@@ -228,6 +217,7 @@
 /* * LANGUAGES SECTION */
 .language .container {
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 .language .card {
   text-align: center;
@@ -235,7 +225,7 @@
   width: 200px;
   margin: 10px;
   transition: transform 0.3s ease-in;
-  background-color: rgb(255, 255, 255);
+  background-color: #92a6db56;
   padding: 10px;
   overflow: hidden;
 }
@@ -255,32 +245,135 @@
 .other_text {
   font-size: 50px;
   color: var(--text-color);
-  /* background-color: var(--background-color-2); */
+  background-color: var(--bg-color-2);
 }
 
 /* PROJECTS SECTION */
 
 .projects {
-  height: 100vh;
+  height: auto;
   position: relative;
-  padding-top: 30px;
+  padding: 30px 0;
+  background-color: var(--bg-color-2);
 }
 
 .projects_title {
   font-size: 50px;
   padding: 20px 0;
+  color: var(--text-color);
 }
 
 .projects_title:before {
   content: "";
-  background-color: var(--background-color-2);
+  background-color: var(--text-color);
   display: block;
   height: 2.5px;
 }
 
 .projects_title:after {
   content: "";
-  background-color: var(--background-color-2);
+  background-color: var(--text-color);
   display: block;
   height: 2.4px;
+}
+
+/* ABOUT SECTION */
+.about {
+  height: 80vh;
+  position: relative;
+  padding-top: 30px;
+  background-color: var(--bg-color);
+}
+
+.about_title {
+  font-size: 50px;
+  padding: 20px 0;
+  color: var(--text-color);
+}
+
+.about_title:before {
+  content: "";
+  background-color: var(--text-color);
+  display: block;
+  height: 2.5px;
+}
+
+.about_title:after {
+  content: "";
+  background-color: var(--text-color);
+  display: block;
+  height: 2.4px;
+}
+
+.about_content {
+  color: var(--text-color);
+}
+
+/* FOOTER SECTION */
+
+.footer {
+  height: 50vh;
+}
+
+.footer .grid-3 {
+  gap: 50px;
+}
+
+.footer .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  padding-right: 200px;
+}
+
+.footer .logo-footer {
+  font-size: 33px;
+  font-family: var(--logo-font);
+  font-weight: 100;
+  padding-bottom: -10px;
+  color: var(--secondary-color);
+}
+
+.footer .social a {
+  margin: 0 10px;
+  color: var(--text-color);
+  transition: 0.4s ease;
+}
+.footer .social a:hover {
+  color: black;
+}
+
+.footer .nav li,
+.footer .nav a {
+  transition: all 0.4s ease;
+}
+.footer .nav a {
+  color: var(--text-color);
+}
+.footer .nav a:hover {
+  border-bottom: 4px solid var(--secondary-color);
+  text-shadow: 2px 0 10px black;
+}
+.footer .nav li:hover {
+  transform: scale(1.2);
+}
+
+/* SUPPERERPERPERPRE COMMON */
+
+.intro .card:hover,
+.skills .card:hover,
+.about .card:hover {
+  background: linear-gradient(
+    to top right,
+    transparent,
+    rgba(255, 255, 255, 0.05)
+  );
+  transform: translateY(-5px);
+}
+.intro .card,
+.skills .card,
+.about .card {
+  transition: all 0.4s ease;
 }
