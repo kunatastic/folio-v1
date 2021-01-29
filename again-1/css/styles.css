@@ -64,7 +64,8 @@
   justify-content: space-between;
 }
 
-.hamburger {
+.hamburger,
+.close {
   display: none;
   color: var(--un-text-color);
   font-size: 20px;
@@ -124,6 +125,9 @@
 
 .intro {
   height: 100vh;
+  background-image: url(../images/intro.jpg);
+  background-attachment: fixed;
+  background-size: cover;
   position: relative;
 }
 
@@ -215,7 +219,7 @@
 }
 
 /* * LANGUAGES SECTION */
-.language .container {
+.language {
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -255,6 +259,8 @@
   position: relative;
   padding: 30px 0;
   background-color: var(--bg-color-2);
+  background-image: url(../images/intro.jpg);
+  background-attachment: fixed;
 }
 
 .projects_title {
@@ -313,6 +319,7 @@
 
 .footer {
   height: 50vh;
+  background-image: url(../images/about.jpg);
 }
 
 .footer .grid-3 {
@@ -329,6 +336,7 @@
 }
 
 .footer .logo-footer {
+  text-align: right;
   font-size: 33px;
   font-family: var(--logo-font);
   font-weight: 100;

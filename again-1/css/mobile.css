@@ -21,12 +21,7 @@
   }
 
   /* NAVIGATION */
-  .navigation nav {
-    display: none;
-  }
-  .hamburger {
-    display: block;
-  }
+
   .hero {
     padding-top: 0px;
   }
@@ -87,9 +82,33 @@
   .projects {
     height: auto;
   }
+  /* FOOTER */
+  .footer .flex {
+    justify-content: space-evenly;
+  }
+  .footer {
+    padding: 40px;
+    height: auto;
+  }
+  .footer_content {
+    justify-self: center;
+  }
+  .footer .grid {
+    gap: 20px;
+  }
+  .footer nav .flex {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 500px) {
+  /* NAVIGATION */
+  .navigation nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
   /* LOGO */
   .navigation .logo a {
     font-size: 35px;
