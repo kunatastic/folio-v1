@@ -102,20 +102,6 @@
 }
 
 @media screen and (max-width: 500px) {
-  /* NAVIGATION */
-  .navigation nav {
-    display: none;
-  }
-  .hamburger {
-    display: block;
-  }
-  /* LOGO */
-  .navigation .logo a {
-    font-size: 35px;
-  }
-  .navigation .logo {
-    transform: rotateY(-5deg);
-  }
   /* HERO */
   .hero__text-1 {
     font-size: 120px;

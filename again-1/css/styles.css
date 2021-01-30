@@ -3,30 +3,65 @@
 /* UNDER CONSTRUCTION */
 
 /* .navigation {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  right: 0;
   height: 70px;
   width: 100%;
   background-color: var(--bg-color-opac);
-  position: sticky;
-  top: 0;
-  left: 0;
   backdrop-filter: blur(20px);
-  z-index: 100;
 }
 
 .navigation > .flex {
   justify-content: space-between;
 }
 
-.logo a {
+.navigation .logo a {
   color: var(--secondary-color);
   font-family: var(--logo-font);
   font-size: 50px;
   transition: 0.5s all;
+  float: left;
+  width: 40%;
+  height: 100%;
 }
 
-.logo {
+.navigation .logo {
   transform: rotateZ(-3deg);
   transition: 0.5s all;
+}
+
+.navigation .links {
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#nav-toggle {
+  position: absolute;
+}
+
+.navigation .icon-burger {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  display: none;
+  transform: translateY(-50%);
+}
+
+.navigation .icon-burger .line {
+  width: 30px;
+  height: 5px;
+  background-color: var(--text-color);
+  margin: 5px;
+  border-radius: 3px;
 }
 .navigation .logo a:hover,
 .navigation .logo-container:hover,
@@ -80,6 +115,7 @@
   height: 90vh;
   padding-top: 100px;
   background-color: var(--bg-color);
+  margin-top: 150px;
 }
 
 .hero__text-1,
