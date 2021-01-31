@@ -115,13 +115,21 @@
 }
 
 @media screen and (max-width: 500px) {
+  /* NAVIGATION */
+  .navbar .logo a {
+    pointer-events: none;
+  }
   /* HERO */
   .hero__text-1 {
     font-size: 120px;
+    line-height: 0.6;
   }
   /* SKILLS */
   .skills {
     padding-top: 100px;
+  }
+  .skills .__grid {
+    grid-template-rows: 1fr 3fr;
   }
   .skills_title {
     font-size: 30px;
