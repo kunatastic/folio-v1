@@ -4,82 +4,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kunal💕 | Portfolio</title>
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="./component.css">
-  <link rel="stylesheet" href="./cards.css">
-  <script defer src="./script.js"></script>
+  <title>Kunal👦 | portfolio</title>
+
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+
+  <!-- JQUERY -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/utilities.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/component.css">
+  <link rel="stylesheet" href="./css/showcase.css">
+  <link rel="stylesheet" href="./css/toggle_nav.css">
+
+  <!-- SCRIPTS -->
+  <script defer src="./script/script.js"></script>
 </head>
 
 <body>
-  <!-- Navigation -->
-  <section class="nav_section" id="navbar">
-    <div class="container flex nav">
-      <div class="logo"><a href="#"> kunatastic </a> </div>
-      <div class="link_check">
-        <ul class="flex nav_bar_links">
-          <li><a href="./again-1/index.html">new</a></li>
-          <li><a href="#skillset">SKILLSET</a></li>
-          <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="#about">ABOUT ME</a></li>
+  <!-- =============== CUSTOM SCROLL ===============-->
+  <div id="progressBar"></div>
+  <div id="progressBarContainer"></div>
+  <!-- ============== /CUSTOM SCROLL================-->
+
+  <!--================ NAVIGATION ==================-->
+
+  <section class="navbar" id="navigation">
+    <div class="container flex">
+      <h1 class="logo"><a href="#"> kunatastic </a> </h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
         </ul>
-      </div>
+      </nav>
     </div>
   </section>
+  <!--=============== /NAVIGATION ==================-->
 
-  <section class="hero">
-    <div class=" container">
-      <div class="hero_container">
-        <div class="text_container">
-          <div class="hero_text1">Hi<span class="jump_light">!</span> you </div>
-          <div class="hero_text2">my name is <span class='logo jump_light'>kunal kumar Jha</span> . I'm intrested in
-            <span class="jump_light1">Full Stack Web Development</span> ,
-            <span class="jump_light2">Open Source Enthusiast</span> &
-            <span class="jump_light3">Competitive Programming</span>...
-          </div>
+
+  <!--=============== HERO =========================-->
+  <main class="hero">
+    <div class="container">
+      <p class="hero__text-1">Hi<span class="highlight">!</span> you</p>
+      <p class="hero__text-2">my name is <span class='highlight'>kunal kumar Jha</span>.</p>
+      <p class="hero__text-3"><span class="highlight-1"> FULL STACK WEBDEVELOPMENT </span> ,
+        <span class="highlight-2"> OPEN SOURCE ENTHUSIAST</span> & <span class="highlight-3"> COMPETITVE PROGRAMMING
+        </span> .
+      </p>
+    </div>
+  </main>
+  <!--============== /HERO =========================-->
+  <!--============== INTRO =========================-->
+  <section class="intro theme1" id="intro">
+    <div class="container grid __grid">
+      <div class="flex">
+        <div class="intro_title">INTRODUCTION</div>
+      </div>
+      <div class="flex">
+
+        <div class="intro_content">
+          <p class="card">
+            My name is Kunal and I am a second year undergraduate pursuing Computer Science
+            and Engineering at Vellore Institute of Technology, Chennai. I design and code beautiful things, and I
+            love what I do. I am good at reasoning and problem solving.
+            File extensions I can handle <span class="js keyboard_strokes">.js</span> ,
+            <span class="py keyboard_strokes">.py</span> ,
+            <span class="html keyboard_strokes">.html</span> ,
+            <span class="css keyboard_strokes">.css</span> ,
+            <span class="cpp keyboard_strokes">.c/cpp</span>
+            and
+            <span class="php keyboard_strokes">.php</span> .
+            My resolution for 2021 is to learn App Development and get better at Competitive Programming.
+          </p>
         </div>
-        <!-- <div class="image_container">
-          <!~~ <img width="400px" height="600px" src="./assets/Profile.jpg" alt="My b/w Image"> ~~>
-            <!~~ <div class="random_div logo">🤎
-        </div> ~~> -->
       </div>
-    </div>
+
     </div>
   </section>
+  <!--============= /INTRO =========================-->
 
-  <section class="home" id="home1">
-    <div class="grid container">
-      <div class="flex intro_title">
-        INTRODUCTION
-      </div>
-      <div class="flex intro_content">
-        <p>
-          My name is Kunal and I am a second year undergraduate pursuing Computer Science
-          and Engineering at Vellore Institute of Technology, Chennai.I design and code beautiful things, and I
-          love what I do. I am good at reasoning and problem solving.
-          File extensions I can handle <span class="js keyboard_strokes">.js</span> ,
-          <span class="py keyboard_strokes">.py</span> ,
-          <span class="html keyboard_strokes">.html</span> ,
-          <span class="css keyboard_strokes">.css</span> ,
-          <span class="cpp keyboard_strokes">.C/C++</span> ,
-          and
-          <span class="php keyboard_strokes">.php</span> .
-          My resolution for 2021
-          is to learn App Development and get better
-          at Competitive Programming.
-        </p>
-      </div>
-    </div>
-  </section>
+  <!--============= SKILLS =========================-->
+  <section class="skills theme2 " id="skills">
+    <div class="container grid __grid">
+
+      <div class="flex">
+        <div class="skills_content">
 
 
-
-
-  <section class="skillset" id="skillset">
-    <div class="grid container">
-      <div class="flex skill_content">
-        <!-- CONTENT SKILLS -->
-        <div class="skill_bar">
+          <!-- <!~~ CONTENT SKILLS ~~> -->
 
           <div class="codeconSkillbar">
             <div id="codeconpython"> <span class="codeconSkillArea ">Python</span> </div>
@@ -110,110 +132,191 @@
           </div>
 
 
+          <!-- /CONTENT SKILLS -->
         </div>
-        <!-- /CONTENT SKILLS -->
       </div>
-      <div class="flex skill_title">
-        SKILLSET
-      </div>
-    </div>
-    <!-- <div class="container">
-      <h2>Other Technologies</h2>
-      </div> -->
-  </section>
 
-  <section class="extra_tech">
-    <div class="container">
-      <div class="skill_title">Other Technologies</div>
-      <div class="cards-list">
-
-        <div class="card 1">
-          <div class="card_image"> <img height="280px" width="280px"
-              src="https://websitedeveloperdubai.com/wp-content/uploads/2018/07/react.png" />
-          </div>
-          <div class="card_title title-black">
-            <p>React.JS</p>
-          </div>
+      <div class="flex flex-v">
+        <div class="skills_title">
+          MY SKILLSET
         </div>
-
-        <div class=" card 2">
-          <div class="card_image">
-            <img
-              src="https://www.vedp.org/sites/default/files/styles/case_study_square/public/images/2018-05/AWS.png?itok=j10y21hD" />
-          </div>
-          <div class="card_title title-black">
-            <p>AWS</p>
-          </div>
-        </div>
-
-        <div class=" card 3">
-          <div class="card_image">
-            <img src="https://maxcdn.icons8.com/Share/icon/nolan/logos/github1600.png" />
-          </div>
-          <div class=" card_title title-black">
-            <p>GITHUB</p>
-          </div>
-        </div>
-
-        <div class="card 4">
-          <div class="card_image">
-            <img src="https://www.shareicon.net/data/2016/07/08/117547_developer_512x512.png" />
-          </div>
-          <div class="card_title title-black">
-            <p>Firebase</p>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
+  <aside class="language theme1">
+    <div class="text-center other_text ">
+      Other Technologies
+    </div>
+    <div class="container flex">
+      <!-- AWS -->
+      <div class="card">
+        <h4>AWS</h4>
+        <img src="./images/aws.png" alt="">
+      </div>
+
+      <!-- REACT -->
+      <div class="card">
+        <h4>ReactJS</h4>
+        <img src="./images/react.png" alt="">
+      </div>
+
+      <!-- EXPRESS -->
+      <div class="card">
+        <h4>ExpressJS</h4>
+        <img src="./images/expressjs.png" alt="">
+      </div>
+
+      <!-- GITHUB -->
+      <div class="card">
+        <h4>Github</h4>
+        <img src="./images/github.png" alt="">
+      </div>
+
+      <!-- NPM -->
+      <div class="card">
+        <h4>NPM</h4>
+        <img src="./images/npm.png" alt="">
+      </div>
+
+      <!-- FIREBASE -->
+      <div class="card">
+        <h4>Firebase</h4>
+        <img src="./images/firebase.png" alt="">
+      </div>
+
+      <!-- UBUNTU -->
+      <div class="card">
+        <h4>Ubuntu</h4>
+        <img src="./images/ubuntu.webp" alt="">
+      </div>
+
+      <!-- SASS -->
+      <div class="card">
+        <h4>SASS</h4>
+        <img src="./images/sass.png" alt="">
+      </div>
+
+    </div>
+  </aside>
+  <!--================== /SKILLS ===================-->
 
 
-  <!~~ PROJECTS ~~>
-
-    <section class="projects" id="projects">
-      <div class="grid container">
-        <div class="flex project_title">
-          Projects
-        </div>
-        <div class="flex project_content">
-          <div>
-
-            Im a Project by Kunal
-
-            <!~~ FLIP CARD ~~>
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
-                  </div>
-                  <div class="flip-card-back">
-                    <div class="pjkt_title">Don't Cook</div>
-                    <div class="pjkt_content">This web application is for finding the recipes for all the favorite and
-                      delicious dishes</div>
-                    <div class="pjkt_tech">Tech Used: </div>
-                    <div class="pjkt_tech_list">ReactJS and its hooks, Madamama Rest API and JS</div>
-                  </div>
-                </div>
-              </div>
-              <!~~ /FLIP CARD ~~>
+  <!--================== PROJECTS ==================-->
+  <section class="projects" id="projects">
+    <div class="flex">
+      <p class="text-center projects_title">My Projects</p>
+    </div>
+    <div class="container flex flex-v">
+      <!-- PROJECTS CARDS -->
+      <div class="showcase">
+        <div class="thumbnail thumbnail--awesome">
+          <div class="thumbnail__overlay">
+            <a class="btn" href="https://github.com/kunatastic/Don-t-Cook" target="_blank">CODE</a>
+            <a class="btn" href="https://dont-cook.web.app/" target="_blank">LIVE</a>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="footer_section">
-      <div class="flex container">
-        <p>Copyright © 2021 All rights reserved 🚀 Crafted by me | Kunal Kumar Jha</p>
-        <div class="flex connect">
-          <p>Connect with me</p>
-          <div class="flex connect_links">
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-          </div>
+        <div class="desc">
+          <p>React Application</p>
+          <h2>Don't Cook</h2>
+          <p>This application helps to retrieve and render super delicious dishes recipes</p>
         </div>
       </div>
-    </section>
+      <div class="showcase showcase--inverted">
+        <div class="thumbnail thumbnail--awesome-1">
+          <div class="thumbnail__overlay">
+            <a class="btn" href="https://github.com/kunatastic/Mood-Analxyzer/" target="_blank">CODE</a>
+            <a class="btn" href="https://kunatastic.github.io/Mood-Analxyzer/" target="_blank">LIVE</a>
+          </div>
+        </div>
+        <div class="desc">
+          <p>AWS and AI/ML project</p>
+          <h2>Mood Analxyzer</h2>
+          <p>This project was based on detecting the facial and textual sentiments on realtime basis and displaying the
+            results. Using FaceApi.JS and AWS comprehend </p>
+        </div>
+      </div>
+      <div class="showcase">
+        <div class="thumbnail thumbnail--awesome-2">
+          <div class="thumbnail__overlay">
+            <a class="btn" href="https://github.com/kunatastic/CABer/" target="_blank">CODE</a>
+          </div>
+        </div>
+        <div class="desc">
+          <p>Full stack application using MySQL & PHP</p>
+          <h2>CABER</h2>
+          <p>This project was based on helping people for cab pooling. People would be sorted according to their
+            location and desired times and contact details would be shared and planned accordingly </p>
+        </div>
+      </div>
+      <div class="showcase showcase--inverted">
+        <div class="thumbnail thumbnail--awesome-3">
+          <div class="thumbnail__overlay">
+            <a class="btn" href="https://github.com/kunatastic/QuotesLoader/" target="_blank">CODE</a>
+            <a class="btn" href="https://kunatastic.github.io/QuotesLoader/" target="_blank">LIVE</a>
+          </div>
+        </div>
+        <div class="desc">
+          <p>JS DOM , HTML and CSS</p>
+          <h2>Quote Loaader</h2>
+          <p>A customized homepage which render a new quote everytime and with duck duck go search bar which enables its
+            shortcut for searching</p>
+        </div>
+      </div>
+
+      <!--/ PROJECTS CARDS -->
+    </div>
+  </section>
+
+
+  <!--================= /PROJECTS ==================-->
+  <!--================== ABOUT ME ==================-->
+  <section class="about" id="about">
+    <div class="container grid __grid">
+      <div class="flex">
+        <div class="about_title">
+          About Me
+        </div>
+      </div>
+
+      <div class="flex">
+        <div class="about_content card">
+          <p>I like to design and develop projects which can be actually applied practically used and I enjoy talking
+            Technology with others. I sometimes even do photo manupulation on PhotoShop and I can proudly say that I'm
+            not that bad at it 😏. I have been learning programming since past 2 years and I'm in love💝 with it now. I
+            have learnt few Technologies but I wish to learn more .</p>
+          <br>
+          <p>If you want to get any Web development or Designing projects completed. You can contant me.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================= /ABOUT ME ==================-->
+  <!-- FOOTER -->
+  <footer class="footer theme1">
+    <div class="container grid grid-3">
+      <div class="footer_content">
+        <h1> <a href="#"> <span class="logo-footer">kunatastic</span></a> </h1>
+        <p>Copyright © 2021 All rights reserved 🚀 Crafted by me. </p>
+        <p> Kunal Kumar Jha</p>
+      </div>
+      <div>
+        <ul class="flex flex-v nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div class="social flex">
+        <a href="https://github.com/kunatastic"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/kunal-kumar-jha/"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://instagram.com/kunatastic"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- /FOOTER -->
+
 </body>
 
 </html>
