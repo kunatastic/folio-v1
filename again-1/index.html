@@ -29,77 +29,31 @@
 </head>
 
 <body>
+  <!-- =============== CUSTOM SCROLL ===============-->
+  <div id="progressBar"></div>
+  <div id="progressBarContainer"></div>
+  <!-- ============== /CUSTOM SCROLL================-->
+
   <!--================ NAVIGATION ==================-->
-  <!-- <section class="navigation" id="navigation">
-    <div class="container flex">
-      <div class="logo-container">
-        <div class="logo">
-          <a href="#">
-            kunatastic
-          </a>
-        </div>
-      </div>
-      <nav class="side-nav">
-        <ul class="flex sections mobile">
-          <li><a href="#">home</a></li>
-          <li><a href="#skills">skills</a></li>
-          <li><a href="#projects">projects</a></li>
-          <li><a href="#about">about</a></li>
-        </ul>
-      </nav>
-      <div class="hamburger">
-        <i class="fa-bars fas"></i>
-      </div>
-      <div class="close">
-        <i class="fa-times fas"></i>
-      </div>
-    </div>
-  </section> -->
-  <!-- <section class="navigation" id="navigation">
-    <nav>
-      <input id="nav-toggle" type="checkbox">
-      <div class="logo">kunatastic</div>
-      <ul class="links">
-        <li><a href="#">home</a></li>
-        <li><a href="#skills">skills</a></li>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#about">about</a></li>
-      </ul>
-      <label for="nav-toggle" class="icon-burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </label>
-    </nav>
-  </section> -->
+
   <section class="navbar" id="navigation">
     <div class="container flex">
-      <h1 class="logo">Kunatastic.</h1>
+      <h1 class="logo"><a href="#"> kunatastic </a> </h1>
       <nav>
         <ul>
-          <li><a href="#home">Home</a></li>
+          <li><a href="#">Home</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
         </ul>
       </nav>
     </div>
   </section>
   <!--=============== /NAVIGATION ==================-->
-  <!-- <div style="height: 200px;"></div> -->
-  <!-- EXTRA NAV -->
-  <!-- <div class="side-nav">
-    <ul class="sections">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Gallary</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-  </div> -->
 
-  <!-- /EXTRA NAV -->
+
   <!--=============== HERO =========================-->
-  <section class="hero">
+  <main class="hero">
     <div class="container">
       <p class="hero__text-1">Hi<span class="highlight">!</span> you</p>
       <p class="hero__text-2">my name is <span class='highlight'>kunal kumar Jha</span>.</p>
@@ -107,9 +61,8 @@
         <span class="highlight-2"> OPEN SOURCE ENTHUSIAST</span> & <span class="highlight-3"> COMPETITVE PROGRAMMING
         </span> .
       </p>
-      <div class="flex"><a href="#intro"> ⬇ </a> </div>
     </div>
-  </section>
+  </main>
   <!--============== /HERO =========================-->
   <!--============== INTRO =========================-->
   <section class="intro theme1" id="intro">
@@ -139,6 +92,7 @@
     </div>
   </section>
   <!--============= /INTRO =========================-->
+
   <!--============= SKILLS =========================-->
   <section class="skills theme2 " id="skills">
     <div class="container grid __grid">
@@ -186,14 +140,10 @@
         <div class="skills_title">
           MY SKILLSET
         </div>
-        <p class="card">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut dolor corrupti vel. Iste omnis delectus
-          necessitatibus quidem doloribus amet impedit, et quos placeat, dolorem animi!
-        </p>
       </div>
     </div>
   </section>
-  <section class="language theme1">
+  <aside class="language theme1">
     <div class="text-center other_text ">
       Other Technologies
     </div>
@@ -247,10 +197,9 @@
       </div>
 
     </div>
-  </section>
+  </aside>
   <!--================== /SKILLS ===================-->
 
-  <!-- <h1 class="floating">Somebody told me that this might look cool. Does it look cool?</h1> -->
 
   <!--================== PROJECTS ==================-->
   <section class="projects" id="projects">
@@ -331,8 +280,12 @@
 
       <div class="flex">
         <div class="about_content card">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem porro quod, reprehenderit, dolorem esse sit
-          officiis quam eius eaque iure tempora dolor. Iure, magnam porro odit vero sint totam voluptatibus.
+          <p>I like to design and develop projects which can be actually applied practically used and I enjoy talking
+            Technology with others. I sometimes even do photo manupulation on PhotoShop and I can proudly say that I'm
+            not that bad at it 😏. I have been learning programming since past 2 years and I'm in love💝 with it now. I
+            have learnt few Technologies but I wish to learn more .</p>
+          <br>
+          <p>If you want to get any Web development or Designing projects completed. You can contant me.</p>
         </div>
       </div>
     </div>
@@ -343,10 +296,11 @@
     <div class="container grid grid-3">
       <div class="footer_content">
         <h1> <a href="#"> <span class="logo-footer">kunatastic</span></a> </h1>
-        <p>Copyright © 2021 All rights reserved 🚀 Crafted by me | Kunal Kumar Jha</p>
+        <p>Copyright © 2021 All rights reserved 🚀 Crafted by me. </p>
+        <p> Kunal Kumar Jha</p>
       </div>
       <div>
-        <ul class="flex nav">
+        <ul class="flex flex-v nav">
           <li><a href="#">Home</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -354,9 +308,9 @@
         </ul>
       </div>
       <div class="social flex">
-        <a href="#"><i class="fab fa-github fa-2x"></i></a>
-        <a href="#"><i class="fab fa-medium fa-2x"></i></a>
-        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://github.com/kunatastic"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/kunal-kumar-jha/"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://instagram.com/kunatastic"><i class="fab fa-instagram fa-2x"></i></a>
         <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
       </div>
     </div>

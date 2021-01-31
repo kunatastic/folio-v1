@@ -1,14 +1,27 @@
 .navbar {
   position: sticky;
+  z-index: 10;
+  left: 0;
   top: 0;
   right: 0;
-  left: 0;
-  backdrop-filter: blur(20px);
-  width: 100%;
-  background-color: var(--bg-color);
-  color: var(--text-color-2);
   height: 70px;
-  z-index: 30;
+  width: 100%;
+  backdrop-filter: blur(20px);
+}
+
+.navbar .logo a {
+  font-size: 35px;
+  margin-top: 5px;
+  line-height: 0.5;
+  font-family: var(--logo-font);
+  font-weight: 100;
+  padding-bottom: -10px;
+  color: var(--secondary-color);
+}
+
+.navbar .logo {
+  transform: rotateZ(-5deg);
+  transition: all 0.4s ease;
 }
 
 .navbar .flex {
@@ -20,16 +33,42 @@
 }
 
 .navbar a {
-  color: var(--text-color-2);
+  color: var(--text-color);
   padding: 10px;
 }
 
-.navbar a:hover {
-  border-bottom: 2px solid var(--text-color-2);
+.navbar li {
+  transition: all 0.4s ease;
+  margin: 0 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar li:hover {
+    background-color: rgba(255, 255, 255, 0.151);
+    transform: rotateZ(-10deg) scale(1.5);
+  }
+  .navbar li:nth-child(even):hover {
+    background-color: rgba(255, 255, 255, 0.151);
+    transform: rotateZ(25deg) scale(1.5);
+  }
+  .navbar li a:hover {
+    border-bottom: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    transform: scale(1.2);
+    text-shadow: 5px solid rgba(0, 0, 0, 0.308);
+  }
+  .navbar .logo:hover {
+    transform: rotateZ(-1deg);
+    transform: scale(1.24);
+  }
 }
 @media screen and (max-width: 500px) {
+  .navbar .logo {
+    transform: rotateZ(0deg);
+  }
   .navbar {
-    height: 80px;
+    height: 100px;
+    padding: 10px 0;
   }
 
   .navbar .flex {
@@ -39,5 +78,8 @@
   .navbar ul {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.11);
+  }
+  .navbar li {
+    margin: 0px;
   }
 }

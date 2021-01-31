@@ -7,12 +7,6 @@
   box-sizing: border-box;
 }
 
-/* COLORS OF CHOICE */
-/* 
-  * 3f3f3f
-
-*/
-
 :root {
   /* ============ COLORS ============== */
   --bg-color: #162447;
@@ -38,6 +32,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
 body {
@@ -85,16 +86,11 @@ a {
   justify-content: center;
 }
 
-/* .__grid {
-  grid-template-columns: 2fr 5fr;
-} */
-
 .card {
   background-color: var(--text-color-2);
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  /* color: var(--text-color); */
 }
 
 .theme1 {

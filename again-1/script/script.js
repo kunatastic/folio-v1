@@ -1,8 +1,5 @@
 //======================================== * SHADOW ON NAVIGATION * =============================================//
 
-window.onscroll = function () {
-  scrollFunction();
-};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("navigation").style.boxShadow =
@@ -12,3 +9,14 @@ function scrollFunction() {
       "0 0 0 rgba(0,0,0,0)";
   }
 }
+
+//============================================* CUSTOM SCROLL *===============================================//
+const progressBar = document.querySelector("#progressBar");
+let totalPageHeight = document.body.scrollHeight - window.innerHeight;
+
+window.onscroll = () => {
+  scrollFunction();
+  let newProgressHeight = (window.pageYOffset / totalPageHeight) * 100;
+  progressBar.style.height = `${newProgressHeight}%`;
+  progressBar.style.opacity = `${newProgressHeight * 2}%`;
+};
