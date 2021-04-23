@@ -277,6 +277,8 @@
 .footer {
   height: 50vh;
   background-image: url(../images/about.jpg);
+  /* background-attachment: fixed; */
+  top: 0;
 }
 
 .footer .grid-3 {
