@@ -2,7 +2,7 @@
 
 <br>
 
-I have made my portfolio using feel free to visit my portfolio [here](http://kunatastic.github.io)
+I have made my portfolio using feel free to visit my portfolio [here](http://kunatastic.github.io/my-folio)
 
 <br>
 
