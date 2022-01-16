@@ -24,7 +24,6 @@
 .thumbnail--awesome {
   background-image: url("../images/dont-cook.png");
 }
-
 .thumbnail--awesome-1 {
   background-image: url("../images/mood-analxyzer.png");
 }
@@ -34,6 +33,9 @@
 }
 .thumbnail--awesome-3 {
   background-image: url("../images/quoteLoader.png");
+}
+.thumbnail--awesome-4 {
+  background-image: url("../images/fight.jpg");
 }
 
 .thumbnail__overlay {
@@ -59,8 +61,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   border: 5px solid #1b1b2f;
-  transition: background 250ms ease, color 250ms, width 250ms ease,
-    padding 250ms ease;
+  transition: background 250ms ease, color 250ms, width 250ms ease, padding 250ms ease;
 }
 .desc:after {
   display: block;
