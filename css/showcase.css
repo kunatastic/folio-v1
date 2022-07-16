@@ -37,6 +37,9 @@
 .thumbnail--awesome-4 {
   background-image: url("../images/fight.jpg");
 }
+.thumbnail--awesome-5 {
+  background-image: url("../images/survey.png");
+}
 
 .thumbnail__overlay {
   position: relative;
